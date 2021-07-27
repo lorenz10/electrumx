@@ -1751,9 +1751,9 @@ class Tempura(Coin):
     DAEMON = daemon.FakeEstimateFeeDaemon
     ESTIMATE_FEE = 0.001
     RELAY_FEE = 0.01
-    #TX_COUNT = 1691771
-    #TX_COUNT_HEIGHT = 455409
-    #TX_PER_BLOCK = 4
+    TX_COUNT = 0
+    TX_COUNT_HEIGHT = 0
+    TX_PER_BLOCK = 2
     RPC_PORT = 9902
     REORG_LIMIT = 5000
 
@@ -1768,6 +1768,7 @@ class TempuraTestnet(Tempura):
     WIF_BYTE = bytes.fromhex("ef")
     GENESIS_HASH = ('000069364f734182f534847502f599e4b9e43341c312265c9b34a9a53db57bb9')
     ESTIMATE_FEE = 0.001
+    RPC_PORT = 9904
 
 
 class Trezarcoin(Coin):
