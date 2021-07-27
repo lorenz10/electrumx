@@ -1738,6 +1738,27 @@ class PeercoinTestnet(Peercoin):
         "testnet-electrum.peercoinexplorer.net s"
     ]
 
+class Tempura(Coin):
+    NAME = "Tempura"
+    SHORTNAME = "PPC"
+    NET = "mainnet"
+    P2PKH_VERBYTE = bytes.fromhex("37")
+    P2SH_VERBYTES = (bytes.fromhex("75"),)
+    WIF_BYTE = bytes.fromhex("b7")
+    GENESIS_HASH = ('0000000032fe677166d54963b62a4677'
+                    'd8957e87c508eaa4fd7eb1c880cd27e3')
+    DESERIALIZER = lib_tx.DeserializerTxTimeSegWit
+    DAEMON = daemon.FakeEstimateFeeDaemon
+    ESTIMATE_FEE = 0.001
+    RELAY_FEE = 0.01
+    #TX_COUNT = 1691771
+    #TX_COUNT_HEIGHT = 455409
+    #TX_PER_BLOCK = 4
+    RPC_PORT = 9902
+    REORG_LIMIT = 5000
+
+    VALUE_PER_COIN = 1000000
+
 class TempuraTestnet(Peercoin):
     NAME = "TempuraTestnet"
     SHORTNAME = "tPPC"
