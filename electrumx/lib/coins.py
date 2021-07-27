@@ -1759,7 +1759,7 @@ class Tempura(Coin):
 
     VALUE_PER_COIN = 1000000
 
-class TempuraTestnet(Peercoin):
+class TempuraTestnet(Tempura):
     NAME = "TempuraTestnet"
     SHORTNAME = "tPPC"
     NET = "testnet"
