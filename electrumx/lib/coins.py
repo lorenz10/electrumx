@@ -1738,6 +1738,16 @@ class PeercoinTestnet(Peercoin):
         "testnet-electrum.peercoinexplorer.net s"
     ]
 
+class TempuraTestnet(Peercoin):
+    NAME = "TempuraTestnet"
+    SHORTNAME = "tPPC"
+    NET = "testnet"
+    P2PKH_VERBYTE = bytes.fromhex("6f")
+    P2SH_VERBYTES = (bytes.fromhex("c4"),)
+    WIF_BYTE = bytes.fromhex("ef")
+    GENESIS_HASH = ('000069364f734182f534847502f599e4b9e43341c312265c9b34a9a53db57bb9')
+    ESTIMATE_FEE = 0.001
+
 
 class Trezarcoin(Coin):
     NAME = "Trezarcoin"
