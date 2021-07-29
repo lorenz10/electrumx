@@ -1745,14 +1745,13 @@ class Tempura(Coin):
     P2PKH_VERBYTE = bytes.fromhex("37")
     P2SH_VERBYTES = (bytes.fromhex("75"),)
     WIF_BYTE = bytes.fromhex("b7")
-    GENESIS_HASH = ('0000000032fe677166d54963b62a4677'
-                    'd8957e87c508eaa4fd7eb1c880cd27e3')
+    GENESIS_HASH = ('000001fb225516ed68fbfbb15e0990b9084536fe55fb3b39d3fdc358a3788cc0')
     DESERIALIZER = lib_tx.DeserializerTxTimeSegWit
     DAEMON = daemon.FakeEstimateFeeDaemon
     ESTIMATE_FEE = 0.001
     RELAY_FEE = 0.01
-    TX_COUNT = 0
-    TX_COUNT_HEIGHT = 0
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
     TX_PER_BLOCK = 2
     RPC_PORT = 9902
     REORG_LIMIT = 5000
